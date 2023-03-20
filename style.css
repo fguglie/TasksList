@@ -13,6 +13,7 @@ h1{
     color: darkslategray
 }
 
+
 .container{
     width: 30%;
     background-color: white;
@@ -33,8 +34,15 @@ form{
 
 input{
     padding: 15px, 10px;
-    width: 400px;
     outline: none;
+    width: auto!important;
+    height:30px;
+    border: 2px solid rgb(0, 83, 55);
+    border-radius: 4px;
+}
+
+input:focus {
+    background-color: rgb(234, 250, 255);
 }
 
 
