@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <div class="tareaList">
+            <form>
+                <label for="tarea">Título</label>
+                <input type="text" name="tarea" id="tarea">
+                <br>
+                <label for="tarea">Descripción</label>
+                <input type="text" name="descripcion" id="descripcion">
+                <br>
+                <label for="tarea">Fecha de Vencimiento:</label>
+                <input type="date" name="fechaVencimiento" id="fechaVencimiento">
+                <br>
+                <button id="buttonAddTask" type="button" onclick="addTask(tarea, descripcion, fechaVencimiento)">Agregar tarea!</button>
+            </form>
+        </div>
+        <div class="li-container">
+            <p class="empty">No tienes tareas pendientes</p>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <table id="tasksTable" >
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
